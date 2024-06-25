@@ -1,0 +1,55 @@
+body {
+    background-color: hsl(220, 15%, 55%);
+}
+
+.card {
+    max-width:300px ;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.qrcode {
+    width: 250px;
+    padding: 16px;
+    border-radius: 24px;
+    margin: 0 16px;
+}
+.text {
+    padding:0 12px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .qrcode {
+        width:100% ;
+        margin: 10px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .qrcode {
+        width:30% ;
+        margin: 20px;
+    }
+    .text{
+        font-size: 24px;
+    }
+    
+}
